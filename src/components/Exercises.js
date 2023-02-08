@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { Container } from '../styles/style';
 
 const Exercises = () => {
     return (
-        <div>Exercises</div>
+        <div className='wrap'>
+            <Container>
+                Exercises
+            </Container>
+        </div>
     )
 }
 

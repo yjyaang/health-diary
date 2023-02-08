@@ -22,7 +22,7 @@ const Start = ({setIsLoading}) => {
 
     return (
         <div>
-            <img src='wave.png' className='wave' alt='wave' />
+            <img src='image/wave.png' className='wave' alt='wave' />
             <div>갓생일지</div>
         </div>
     )

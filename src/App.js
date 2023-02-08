@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Start from './components/Start';
 import Home from './components/Home';
@@ -7,15 +8,23 @@ import Exercises from './components/Exercises';
 import Water from './components/Water';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { setOneVh } from './styles/setOneVh';
+import GlobalStyle from './styles/GlobalStyle';
 
 const App = () => {
 
     const [isLoading, setIsLoading] = useState(false);
 
+    useEffect(() => {
+        setOneVh();
+        window.addEventListener('resize', setOneVh);
+    }, []);
+
     return (
-        <div class="app-wrap">
+        <div className="app-wrap">
             {/* 인트로 화면과 들어가서의 화면을 조건부 렌더링 */}
             <BrowserRouter>
+            <GlobalStyle />
                 {isLoading ? (
                     <>
                         <Header />
@@ -27,7 +36,7 @@ const App = () => {
                         </Routes>
                         <Footer />
                     </>
-                ) : <Start setIsLoading={setIsLoading}/>}
+                ) : <Start setIsLoading={setIsLoading} />}
                 {/* <Header />
                 <Routes>
                     <Route path="/" element={<Home />} />

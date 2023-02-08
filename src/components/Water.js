@@ -1,8 +1,13 @@
 import React from 'react'
+import { Container } from '../styles/style'
 
 const Water = () => {
     return (
-        <div>Water</div>
+        <div className='wrap'>
+            <Container>
+                Water
+            </Container>
+        </div>
     )
 }
 

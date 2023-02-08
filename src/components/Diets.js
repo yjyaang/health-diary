@@ -1,8 +1,13 @@
 import React from 'react'
+import { Container } from '../styles/style'
 
 const Diets = () => {
     return (
-        <div>Diets</div>
+        <div className='wrap'>
+            <Container>
+                Diets
+            </Container>
+        </div>
     )
 }
 
