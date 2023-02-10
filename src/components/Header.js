@@ -11,7 +11,7 @@ const HeaderDiv = styled.div`
 
 const Header = () => {
     return (
-        <HeaderDiv>Header</HeaderDiv>
+        <HeaderDiv>갓생일지</HeaderDiv>
     )
 }
 

@@ -24,7 +24,7 @@ border-top: 1px solid rgba(200, 200, 200, 0.4);
 const Footer = () => {
     const [currentTab, setCurrentTab] = useState(0);
     const categoryArr = [
-        {name: '홈', src: 'image/home.png', selsrc: 'image/home-selected.png', link: '/'},
+        {name: '홈', src: 'image/home.png', selsrc: 'image/home-selected.png', link: '/home'},
         {name: '식단기록', src: 'image/meal.png', selsrc: 'image/meal-selected.png', link: '/diet'},
         {name: '운동기록', src: 'image/exercise.png', selsrc: 'image/exercise-selected.png', link: '/exercise'},
         {name: '물마시기', src: 'image/water.png', selsrc: 'image/water-selected.png', link: '/water'}
