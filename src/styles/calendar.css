@@ -1,0 +1,17 @@
+button {
+    border-style: none;
+    padding: 5px;
+    margin: 10px 0;
+    background-color: transparent;
+}
+
+.react-calendar__month-view__weekdays {
+    margin: 5px 0;
+    border-bottom: 1px solid #606060;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
