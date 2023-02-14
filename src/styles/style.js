@@ -13,3 +13,28 @@ export const Container = styled.div`
     justify-content: space-evenly;
     align-items: center;
 `
+
+export const WaterBottle = styled.div`
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background-color: #71caed;
+    .white {
+        width: 300px;
+        height: 30%;
+        background-color: #fff;
+    }
+    img {
+        width: 300px;
+        height: 300px;
+    }
+`
+
+export const WaterBtn = styled.button`
+    border-style: none;
+    border-radius: 20px;
+    background-color: #7078a0;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+`

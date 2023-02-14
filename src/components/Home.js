@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { Container } from '../styles/style'
 import Calendar from 'react-calendar';
 import moment from 'moment';
@@ -10,10 +10,16 @@ const Home = () => {
 
     return (
         <div className='wrap'>
-            <Calendar
-            calendarType='Hebrew'
-            formatDay={(locale, date) => moment(date).format("DD")}
-            />
+            <Container>
+                <Calendar
+                    calendarType='Hebrew'
+                    formatDay={(locale, date) => moment(date).format("DD")}
+                    onChange={onChange} value={value}
+                />
+                <div className="todo-date">
+                    {moment(value).format("YYYY년 MM월 DD일")}
+                </div>
+            </Container>
         </div>
     )
 }
